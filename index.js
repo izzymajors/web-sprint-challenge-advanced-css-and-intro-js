@@ -244,7 +244,7 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array, [i]){
+function get20s(array, ){
   const altGet20s = [];
   for (let [i] in array){
     if(array[i].years.includes("1900-2000")){
@@ -265,10 +265,11 @@ function get20s(array, [i]){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array,index) {
-
+function removeArtist(array, index) {
+ removeArtist.shift(array, index);
+ return array.length;
 }
-   
+  
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
