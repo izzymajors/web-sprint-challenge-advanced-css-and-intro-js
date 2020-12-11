@@ -228,11 +228,12 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(array,index) {
-  return `the artist at  index ${array[index]["id"]} is ${array[index]["name"]}`;
+function getArtistByIndex(array,index ) {
+  
+  return `the artist at index ${array.[index]["id"]} is ${array.[index].name}`;
 }  
 
-console.log(getArtistByIndex(artists,0));
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -243,10 +244,9 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array, names){
+function get20s(array){
  
 }
-
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -258,8 +258,8 @@ function get20s(array, names){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array, index){
-  removeArtist.array.index;
+function removeArtist(array,index) {
+
 }
    
 
