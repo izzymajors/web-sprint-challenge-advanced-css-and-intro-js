@@ -247,7 +247,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array, ){
   const altGet20s = [];
   for (let [i] in array){
-    if(array[i].years.includes("1900-2000")){
+    if(array[i].["years"].includes["1900-2000"]){
  altGet20s.push(array[i].name);
     } return altGet20s[i];
   }
@@ -266,9 +266,11 @@ function get20s(array, ){
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, index) {
- removeArtist.shift(array, index);
- return array.length;
+ removeArtist.splice( array, index);
+return removeArtist.length;
 }
+
+
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
